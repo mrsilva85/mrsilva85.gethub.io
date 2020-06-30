@@ -1,0 +1,17 @@
+# mrsilva85paid.gethub.io
+Payid link
+
+curl --location --request POST 'http://127.0.0.1:8081/users' \
+  --header 'PayID-API-Version: 2020-06-18' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+       "payId": "alice$127.0.0.1",
+       "addresses": [
+           {
+               "paymentNetwork": "XRPL",
+               "environment": "TESTNET",
+               "details": {
+                   "address": "rrpNbkNL5icuAPPJ4F9FBEuzm5VVqKoiin",
+                  "tag": "paid"
+               }
+           }
